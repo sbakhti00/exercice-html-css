@@ -1,0 +1,620 @@
+@font-face  {
+    font-family: 'titres';
+    src: url(fonts/Rajdhani/Rajdhani-Regular.ttf);
+}
+
+@font-face  {
+    font-family: 'body';
+    src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, button {
+    font-family: 'body';
+}
+
+h1, h2 {
+    font-family: 'titres';
+}
+
+.container {
+    padding: 4rem 2rem;
+    width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:1000px) {
+    .container {
+        width: 100%;
+    }
+}
+
+.header-nav {
+    background-color: rgb(0, 0, 81);
+    height: 55px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.hero {
+    min-height: calc(100vh - 55px);
+    background-image: url(img/h.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 2rem 1rem;
+}
+
+.logo-top {
+    height: 80px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.freepik {
+    margin-bottom: 25px;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.freepik a {
+    color: white;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    width: 480px;
+}
+
+.hero-buttons button {
+    padding: 10px;
+    width: 230px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 2px 4px 8px black;
+    text-transform: uppercase;
+}
+
+button {
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.hero-buttons button:first-child {
+    background-color: white;
+    color: rgb(0, 22, 66);
+}
+
+.hero-buttons button:nth-child(2) {
+    background-color: rgb(0, 22, 66);
+    color: white;
+}
+
+@media screen and (max-width:900px) {
+    .hero-buttons {
+        flex-direction: column;
+        margin-bottom: 25px;
+        width: 250px;
+    }
+    .hero-buttons button {
+        padding: 10px 0;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+.img-bottom-hero {
+    margin: 0 auto;
+    margin-top: auto;
+    width: 320px;
+}
+
+.section2 {
+    background-color: rgb(1, 1, 82);
+    display: flex;
+    align-items: center;
+}
+
+.section2 .container {
+    display: flex;
+}
+
+.section2 .container-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 0;
+}
+
+.section2 .container-left h2 {
+    font-size: 2.3rem;
+    color: orange;
+    margin-bottom: 10px;
+    padding-right: 2rem;
+}
+
+.section2 .container-right {
+    width: 25%;
+}
+
+.img-container-right {
+    height: 170px;
+    aspect-ratio: 1/1;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.img-container-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.section2 .container-right .benefits {
+    font-size: 1.8rem;
+    color: orange;
+}
+
+.decoration {
+    width: 200px;
+    height: 10px;
+    background-color: orange;
+    margin: 20px 0;
+}
+
+.section2 .container-right .decoration+p {
+    color: white;
+    margin: 20px 0;
+}
+
+.section2 button, .section4 button {
+    padding: 10px;
+    width: 180px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 2px 4px 8px black;
+    text-transform: uppercase;
+    background-color: orange;
+    color: rgb(0, 22, 66);
+}
+
+@media screen and (max-width:900px) {
+    .section2 .container {
+        flex-direction: column;
+    }
+    .section2 .container div:not(.img-container-right,.decoration) {
+        width: 100%;
+    }
+    .section2 .container .decoration {
+        width: 200px;
+    }
+}
+
+.section3 {
+    display: flex;
+    background: url(img/e.jpg) center/cover;
+    color: white;
+    position: relative;
+}
+
+.section3 .container {
+    min-height: 600px;
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+}
+
+.section3 .container-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+@media screen and (max-width:900px) {
+    .section3 .container-left {
+        width: 80%;
+    }
+}
+
+.section3 .container-left div {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.section3 h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.section3 h2+span {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.section3 .bottom p:first-child {
+    width: 250px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.section3 .bottom p:nth-child(2) {
+    width: 300px;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.section3 img:last-child {
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+
+.section4 {
+    background-color: rgb(1, 1, 82);
+    display: flex;
+    align-items: center;
+}
+
+.section4 .container {
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.section4 h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: orange;
+}
+
+.section4 .elements {
+    padding: 45px 0;
+    display: flex;
+}
+
+.section4 .element {
+    width: 33%;
+    padding-right: 40px;
+}
+
+@media screen and (max-width:900px) {
+    .section4 .elements  {
+        flex-direction: column;
+    }
+    .section4 .element {
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 3rem;
+    }
+}
+
+.section4 .logo {
+    aspect-ratio: 1/1;
+    width: fit-content;
+    background-color: orange;
+    border-radius: 80px;
+    margin-bottom: 25px;
+    padding: 30px;
+}
+
+.section4 .logo img {
+    width: 50px;
+    object-position: center;
+}
+
+.section4 span {
+    color: orange;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.section4 p {
+    margin-top: 25px;
+    color: white;
+}
+
+.section5 {
+    background-image: url(img/b.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.section5 img {
+    height: 300px;
+    left: 0;
+}
+
+.section5 h2 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+.section5 .container-right {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    padding-left: 70px;
+    padding: 3rem 1rem;
+}
+
+.section5 .container-right h2+span {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.section5 .container-right p {
+    font-size: 1.1rem;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.section5 button {
+    padding: 10px;
+    width: 180px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 2px 4px 8px black;
+    text-transform: uppercase;
+    background-color: orange;
+    color: white;
+}
+
+@media screen and (max-width:900px) {
+    .section5 img {
+        display: none;
+    }
+    .section5 .container-right {
+        width: 80%;
+        padding-left: 2rem;
+    }
+}
+
+.section6 {
+    background-color: rgb(1, 1, 82);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.section6 .container {
+    display: flex;
+    padding-top: 50px;
+    padding: 3rem 2rem;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.section6 .container div {
+    display: flex;
+    flex-direction: column;
+}
+
+.section6 .container .left {
+    width: 20%;
+    margin: 0;
+}
+
+.section6 .container .left h2 {
+    font-size: 2rem;
+    color: orange;
+    text-transform: capitalize;
+}
+
+.section6 .container .right {
+    width: 70%;
+    color: white;
+    margin: 0;
+}
+
+.section6 button {
+    padding: 10px;
+    width: 180px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 2px 4px 8px black;
+    text-transform: uppercase;
+    background-color: orange;
+    color: rgb(0, 0, 82);
+    margin-top: 20px;
+}
+
+.section6 .container-img {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    width: 900px;
+    padding-bottom: 4rem;
+}
+
+.section6 .img {
+    width: 22%;
+    aspect-ratio: 2/3;
+}
+
+.section6 .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media screen and (max-width:900px) {
+    .section6 .container {
+        flex-direction: column;
+        width: 100vw;
+    }
+    .section6 .container .left {
+        width: 80%;
+    }    
+    .section6 .container .right {
+        width: 85%;
+        color: white;
+    }
+    .section6 .container-img {
+        flex-direction: column;
+        padding: 0 2rem;
+        width: 90%;
+        padding-bottom: 4rem;
+    }
+    .section6 .img {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+.section7 {
+    background-image: url(img/c.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section7 .container {
+    max-width: 700px;
+    background-color: white;
+    height: 50%;
+    display: flex;
+    padding: 50px 30px;
+    margin-top: 70px;
+}
+
+.section7 .left {
+    display: flex;
+    flex-direction: column;
+}
+
+.section7 .left h2 {
+    color: rgb(0, 0, 83);
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.section7 .left span {
+    margin-bottom: 25px;
+}
+
+.section7 form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 100px;
+    padding-right: 20px;
+}
+
+.section7 form input {
+    width: 100%;
+    background-color: orange;
+    border: none;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.section7 form input::placeholder, .section7 form textarea::placeholder {
+    color: white;
+}
+
+.section7 .freepik {
+    margin-top: 40px;
+}
+
+.section7 textarea {
+    background-color: orange;
+    width: 100%;
+    height: 180px;
+    padding: 15px 15px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.section7 button {
+    width: calc(100% + 30px);
+    padding: 15px;
+    color: white;
+    background-color: rgb(0, 0, 81);
+    border: none;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:900px) {
+    .section7 .container {
+        width: 90%;
+        background-color: white;
+        height: 50%;
+        flex-direction: column;
+        padding: 50px 30px;
+        margin-top: 70px;
+    }
+    .section7 form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0;
+        align-items: center;
+    }
+    
+}
+
+footer {
+    height: 25vh;
+    background-color: rgb(0, 0, 81);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+}
